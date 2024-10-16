@@ -2,15 +2,18 @@
 body {
             font-family: Arial, sans-serif;
             padding: 20px;
+
+	
         }
         h1 {
             text-align: center;
         }
         ul {
-            list-style-type: none;
+           
             padding-left: 0;
+			align-items:center
         }
         li {
             font-size: 18px;
-            padding: 5px 0;
+            padding: 18px 0;
         }
