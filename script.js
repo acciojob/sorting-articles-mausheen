@@ -11,13 +11,15 @@ function removeEle(ele){
 	return ele.replace(/^(a |an | The)/i,'').trim();
 }
 
-const srtBonds=bonds.sort((a,b)=>removeEle(a).localeCompare(removeEle(b)));
+const srtBonds=bands.sort((a,b)=>removeEle(a).localeCompare(removeEle(b)));
 
 const bandList=document.getElementById("band");
 
-srtBonds.Foreach(ele=>{
+srtBonds.forEach(ele=>{
 	const li=document.createElement("li");
 	li.textContent=ele;
 	bandList.appendChild(li);
 })
+
+
 
