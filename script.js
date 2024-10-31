@@ -14,7 +14,7 @@
         const sortedBands = bands.sort((a, b) => stripArticles(a).localeCompare(stripArticles(b)));
      console.log(sortedBands);
         // Reference to the UL element
-        const bandList = document.getElementById('band');
+        const bandList = document.querySelector('#band');
 
         // Populate the UL with the sorted bands
         sortedBands.forEach(band => {
